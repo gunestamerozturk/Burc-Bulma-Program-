@@ -1,33 +1,35 @@
-  int gun, ay;
+  int gun, ay; 
         Scanner k=new Scanner(System.in);
-        System.out.print(“Ayı giriniz : “);
+        System.out.print(â€œAyÃ½ giriniz : â€œ);
         ay=k.nextInt();
-        System.out.print(“Günü Giriniz : “);        
+        System.out.print(â€œGÃ¼nÃ¼ Giriniz : â€œ);        
         gun=k.nextInt();
         k.close();
-        
-        if ((ay==1 && gun<=20)||(ay==12 && gun>=21)) {
-            System.out.println(“Oğlak”);
+             
+        if (ay<=0||ay>=13||gun>=32||gun<=0){
+          System.out.printIn("Yanlis Giris Yaptiniz..!");
+        }else if ((ay==1 && gun<=20)||(ay==12 && gun>=21)) { 
+            System.out.println(â€œOÄ‘lakâ€);               
         }else if((ay==1 && gun>=21)||(ay==2 && gun<=19)) {
-            System.out.println(“Kova”);
+            System.out.println(â€œKovaâ€);
         }else if((ay==2 && gun>=20)||(ay==3 && gun<=20)) {
-            System.out.println(“Balık”);
+            System.out.println(â€œBalÃ½kâ€);
         }else if((ay==3 && gun>=21)||(ay==4 && gun<=20)) {
-            System.out.println(“Koç”);
+            System.out.println(â€œKoÃ§â€);
         }else if((ay==4 && gun>=21)||(ay==5 && gun<=20)) {
-            System.out.println(“Boğa”);
+            System.out.println(â€œBoÄ‘aâ€);
         }else if((ay==5 && gun>=21)||(ay==6 && gun<=21)) {
-            System.out.println(“İkizler”);
+            System.out.println(â€œÃkizlerâ€);
         }else if((ay==6 && gun>=22)||(ay==7 && gun<=22)) {
-            System.out.println(“Yengeç”);
+            System.out.println(â€œYengeÃ§â€);
         }else if((ay==7 && gun>=23)||(ay==8 && gun<=23)) {
-            System.out.println(“Aslan”);
+            System.out.println(â€œAslanâ€);
         }else if((ay==8 && gun>=24)||(ay==9 && gun<=23)) {
-            System.out.println(“Başak”);
+            System.out.println(â€œBaÅ£akâ€);
         }else if((ay==9 && gun>=24)||(ay==10 && gun<=23)) {
-            System.out.println(“Terazi”);
+            System.out.println(â€œTeraziâ€);
         }else if((ay==10 && gun>=24)||(ay==11 && gun<=22)) {
-            System.out.println(“Akrep”);
+            System.out.println(â€œAkrepâ€);
         }else if((ay==11 && gun>=23)||(ay==12 && gun<=21)) {
-            System.out.println(“Yay”);
+            System.out.println(â€œYayâ€);
         }
